@@ -1,10 +1,12 @@
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+This project is for recruiters, a search engine for skills, languages and recent jobs, to have information better adapted to the job search, project done in 26 hours
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm i` for install all the repos.
 
 ## Code scaffolding
 
