@@ -1,0 +1,56 @@
+<div class="app-container">
+  <div fxLayout="column">
+    <div class="search-field" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1%">
+      <label for="username">Nombre de usuario</label>
+      <input id="username" #username placeholder="Nombre de usuario a buscar" value="UserName">
+      <button type="button" class="submit" (click)="getUser(username.value)">Buscar</button>
+    </div>
+    <div fxLayout="row" class="btn-group" role="group">
+      <button type="button" class="btn btn-primary" (click)="setState('languages')">Languages</button>
+      <button type="button" class="btn btn-primary" (click)="setState('jobs')">Jobs</button>
+      <button type="button" class="btn btn-primary" (click)="setState('skills')">Skills</button>
+    </div>
+  </div>
+  <div *ngIf="user" fxLayout="column" fxLayoutGap="2%">
+    <div fxLayoutAlign="center center">
+      <div fxLayout="column" class="card">
+        <div class="div-image" fxLayout="column" fxLayoutAlign="start center">
+          <img [src]="user.picture" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{user.name}}</h5>
+          <p class="description">{{user.professionalHeadline}}</p>
+          <p>Country: {{user.location.country}}</p>
+          <a [href]="user.links[0].address" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+    <div [ngSwitch]="state">
+      <div *ngSwitchCase="'languages'">
+        <div *ngFor="let language of languages">
+          <div fxLayout="column">
+            <h4>{{language.language}}</h4>
+            <p>{{language.fluency}}</p>
+          </div>
+        </div>
+      </div>
+      <div *ngSwitchCase="'jobs'">
+        <div>
+          <div *ngFor="let job of jobs">
+            <h4>{{job.name}}</h4>
+            <div *ngFor="let org of job.organizations">
+              <p>{{org.name}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngSwitchCase="'skills'">
+        <div *ngFor="let skill of skills">
+          <p>{{skill.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

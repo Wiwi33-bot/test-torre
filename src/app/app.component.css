@@ -1,0 +1,56 @@
+.app-container {
+    margin: 10px 20px 20px 30px;
+}
+
+.search-field {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+}
+
+.search-field label {
+    margin-left: 10px;
+}
+
+button {
+    margin: 0px 2px 0px 2px;
+}
+
+.submit {
+    border: none;
+    background-color: #ff9774;
+    color: #000000;
+    border-radius: 5px;
+}
+
+input {
+    width: 10%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+p {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.div-image {
+    margin-top: 5%;
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    border-width: 5px;
+}
+
+.description {
+    color: #c3a6b3;
+}
+
+.card {
+    margin-top: 50px;
+    width: 400px;
+}

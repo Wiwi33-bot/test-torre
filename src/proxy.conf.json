@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://bio.torre.co/",
+    "secure": true,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
