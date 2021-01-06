@@ -1,0 +1,8 @@
+01/04/2021-12:15 Start brainstorming to manage the test.
+01/04/2021-14:45 ideas, game style app to level candidates, or application for recruiters to have user information at hand, such as jobs, languages, skills
+01/04/2021-15:38 ask the technical team a question regarding the test to know if the API is necesary
+01/04/2021-17:30 tech team answer to use the API so the game idea was discarted and start working on the other
+01/04/2021-23:45 ask to technicacl team about the cors restriction
+01/05/2021-11:44 tech team answer that is part of the test , so start to use a diferent proxy config to avoid the cors restriction
+01/05/2021-15:20 finish the conection with the API and start working on testcases.
+01/05/2021-16:20 finish test cases and upload project to github.
